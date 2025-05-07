@@ -19,17 +19,9 @@
             <p><xsl:value-of select="descripcion"/></p>
             <p class="precio">Precio: <xsl:value-of select="precio"/> <xsl:value-of select="precio/@moneda"/></p>
             <div class="menu">
-          <a href="index.html">Inicio</a>
-          <a href="datos.html">Formulario</a>
-          <a href="personal.html">Mis datos</a>
-        </div>
-        <div class="content-container">
-          <h1>Catálogo de Productos</h1>
-          <xsl:for-each select="productos/producto">
-            <div class="producto">
-              <h2><xsl:value-of select="nombre"/></h2>
-              <p><xsl:value-of select="descripcion"/></p>
-              <p class="precio">Precio: <xsl:value-of select="precio"/> <xsl:value-of select="precio/@moneda"/></p>
+              <a href="index.html">Inicio</a>
+              <a href="datos.html">Formulario</a>
+              <a href="personal.html">Mis datos</a>
             </div>
           </div>
         </xsl:for-each>
