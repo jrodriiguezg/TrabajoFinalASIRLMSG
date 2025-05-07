@@ -23,6 +23,7 @@
               <a href="datos.html">Formulario</a>
               <a href="personal.html">Mis datos</a>
             </div>
+          </div>
         </xsl:for-each>
       </body>
     </html>
