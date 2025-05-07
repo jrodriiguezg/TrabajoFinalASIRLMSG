@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="pc.xsl"?>
+<productos>
+  <producto id="PROD001">
+    <nombre>Laptop Ultrabook Ligera</nombre>
+    <descripcion>Laptop de 14 pulgadas con procesador Intel Core i7, 16GB de RAM y SSD de 512GB. Ideal para productividad y portabilidad.</descripcion>
+    <precio moneda="EUR">1299.99</precio>
+    <categoria>Electrónica</categoria>
+    <subcategoria>Portátiles</subcategoria>
+    <stock>25</stock>
+    <atributos>
+      <atributo nombre="Pantalla">14 pulgadas IPS</atributo>
+      <atributo nombre="Procesador">Intel Core i7-1260P</atributo>
+      <atributo nombre="RAM">16GB DDR5</atributo>
+      <atributo nombre="Almacenamiento">512GB NVMe SSD</atributo>
+      <atributo nombre="Sistema Operativo">Windows 11 Pro</atributo>
+    </atributos>
+    <imagen archivo="laptop_ultrabook.jpg"/>
+  </producto>
+  <producto id="PROD002">
+    <nombre>Smartphone Android Gama Alta</nombre>
+    <descripcion>Smartphone con pantalla AMOLED de 6.7 pulgadas, cámara triple de 50MP y batería de larga duración.</descripcion>
+    <precio moneda="EUR">899.00</precio>
+    <categoria>Electrónica</categoria>
+    <subcategoria>Móviles</subcategoria>
+    <stock>50</stock>
+    <atributos>
+      <atributo nombre="Pantalla">6.7 pulgadas AMOLED</atributo>
+      <atributo nombre="Cámara Principal">50MP + 12MP + 8MP</atributo>
+      <atributo nombre="RAM">8GB</atributo>
+      <atributo nombre="Almacenamiento">128GB</atributo>
+      <atributo nombre="Batería">5000 mAh</atributo>
+    </atributos>
+    <imagen archivo="smartphone_gama_alta.jpg"/>
+  </producto>
+  <producto id="PROD003">
+    <nombre>Cafetera Espresso Automática</nombre>
+    <descripcion>Cafetera superautomática con molinillo integrado para preparar espresso, cappuccino y latte macchiato.</descripcion>
+    <precio moneda="EUR">349.50</precio>
+    <categoria>Electrodomésticos</categoria>
+    <subcategoria>Cafeteras</subcategoria>
+    <stock>15</stock>
+    <atributos>
+      <atributo nombre="Tipo">Automática</atributo>
+      <atributo nombre="Molinillo">Integrado</atributo>
+      <atributo nombre="Depósito de Agua">1.8 litros</atributo>
+      <atributo nombre="Presión">15 bar</atributo>
+    </atributos>
+    <imagen archivo="cafetera_espresso.jpg"/>
+  </producto>
+  <producto id="PROD004">
+    <nombre>Libro: "El Señor de los Anillos"</nombre>
+    <descripcion>Edición de bolsillo de la clásica novela de fantasía de J.R.R. Tolkien.</descripcion>
+    <precio moneda="EUR">12.95</precio>
+    <categoria>Libros</categoria>
+    <subcategoria>Fantasía</subcategoria>
+    <stock>100</stock>
+    <atributos>
+      <atributo nombre="Autor">J.R.R. Tolkien</atributo>
+      <atributo nombre="Editorial">Minotauro</atributo>
+      <atributo nombre="Formato">Bolsillo</atributo>
+      <atributo nombre="ISBN">978-8445077371</atributo>
+    </atributos>
+    <imagen archivo="libro_senor_anillos.jpg"/>
+  </producto>
+</productos>

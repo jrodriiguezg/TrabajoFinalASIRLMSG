@@ -1,0 +1,77 @@
+<html>
+<head>
+	<title>WEB ALUMNO</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/rss-parser/3.12.0/rss-parser.min.js"></script>
+        <link href="./estilos/styleindex.css" rel="stylesheet" type="text/css">
+        
+</head>
+<script>
+        function nota(){
+                x1 = parseFloat(prompt("Dime la primera nota..."));
+                x2 = parseFloat(prompt("Dime la segunda nota..."));
+                x3 = parseFloat(prompt("Dime la tercera nota..."));
+                x4 = parseFloat(prompt("Dime la cuarta nota..."));
+                suma = x1 + x2 + x3 + x4;
+                media = suma / 4 ;
+                if (media < 5) {
+                        alert("Insuficiente");
+                } 
+                else if (media == 5) {
+                        alert("Suficiente");
+                }
+                else if (media > 5 && media < 7) {
+                        alert("Bien");
+                } 
+                else if (media >= 7 && media < 9) {
+                        alert("Notable");
+                }    
+                else {
+                        alert("Sobresaliente");
+                }          
+}                       
+ </script>
+<body>
+<div id="cabecera">
+        <div class="menu">
+                <a href="datos.html" target="_blank">Formulario</a>
+                <a href="pc.xml" target="_blank">Catalogo</a>
+                <a href="personal.html" target="_blank">Mis datos</a>
+        </div>
+</div>
+        
+
+       
+		
+        <div id="izquierda"> 
+                <main>
+                        <h1>Bienvenido</h1>
+                        <h2>Al curso 24-25 de enseñanzas virtuales</h2>
+                        <button onclick=nota()>Calcular Media</button>
+                        <div id="noticias-rss">
+                                <h1>Noticias RSS</h1>
+                                <button id="boton-noticias">Ver Noticias</button>
+                        </div>
+                </main>             
+
+
+        </div>
+
+        
+        <script>
+                const rssUrl = 'https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada'; // URL del feed RSS
+                const botonNoticias = document.getElementById('boton-noticias');
+              
+                botonNoticias.addEventListener('click', () => {
+                  window.open(rssUrl, '_blank');
+                });
+              </script>
+              
+        <div id="pie">
+
+                    
+        </div>
+		
+	
+</body>
+</html>

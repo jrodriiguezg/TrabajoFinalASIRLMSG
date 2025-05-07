@@ -1,0 +1,76 @@
+<html>
+<head>
+	<title>Formulario</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        
+        <link href="./estilos/styleform.css"  rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="cabecera">
+        <div class="menu">
+                <a href="index.html" target="_blank">Inicio</a>
+                <a href="pc.xml" target="_blank">Catalogo</a>
+                <a href="personal.html" target="_blank">Mis datos</a>
+        </div>
+</div>
+<main>
+<div class="fcontainer">
+        <div id="izquierda"> 
+            <h1>Formulario</h1>
+            <form action="formi.php" method="get" id="frm" onsubmit="msjenvia()">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br><br>
+        
+                <p>¿Qué prefieres?</p>
+                <input type="radio" id="trabajo" name="preferencia" value="trabajo" required>
+                <label for="trabajo">Trabajo</label><br>
+                <input type="radio" id="ocio" name="preferencia" value="ocio" required>
+                <label for="ocio">Ocio</label><br><br>
+        
+                <p>Selecciona tus intereses:</p>
+                <input type="checkbox" id="musica" name="intereses[]" value="musica">
+                <label for="musica">Música</label><br>
+                <input type="checkbox" id="deportes" name="intereses[]" value="deportes">
+                <label for="deportes">Deportes</label><br>
+                <input type="checkbox" id="cine" name="intereses[]" value="cine">
+                <label for="deportes">Cine</label><br>
+                <input type="checkbox" id="dibujo" name="intereses[]" value="dibujo">
+                <label for="deportes">Dibujo</label><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+        </div>
+        <script>
+          function msjenvia() {
+            const trabajoboton = document.getElementById('trabajo');
+            const ocioboton = document.getElementById('ocio');
+
+            if (trabajoboton.checked) {
+                let nuevaventana1 = window.open("", "", "width=500,height=500"); 
+              nuevaventana1.document.write('<p><img src="https://www.elpublicista.es/adjuntos/fichero_19416_20190320.jpg"  style="max-width:100%; height:auto;"></p>'); 
+              nuevaventana1.document.bgColor = 'silver'; 
+            } else if (ocioboton.checked) {
+                let nuevaventana2 = window.open("", "", "width=500,height=500"); 
+              nuevaventana2.document.write('<p><img src="https://i0.wp.com/www.audiovisual451.com/wp-content/uploads/yelmo-promo-35.jpg?fit=300%2C236&ssl=1"  style="max-width:100%; height:auto;"></p>'); // Escribimos mensaje
+              nuevaventana2.document.bgColor = 'white'; 
+            }
+          }
+              </script>
+</div> 
+        <div id="derecha"> 
+                          
+
+
+        </div>
+
+
+        <div id="pie">
+
+                    
+        </div>
+		
+</main>	
+</body>
+</html>
