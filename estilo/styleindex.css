@@ -58,25 +58,6 @@ p {
     color: #555;
     margin-top: 10px;
 }
-.info-links {
-  position: absolute; 
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  padding: 10px 0; 
-}
-
-.code, .license {
-  color: #808080; 
-  font-size: 0.8em; 
-  text-decoration: none;
-  margin: 0 5px; 
-}
-
-.code:hover, .license:hover {
-  text-decoration: underline; 
-}
 
 
 
