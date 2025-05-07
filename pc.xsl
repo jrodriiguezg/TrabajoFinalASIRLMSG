@@ -18,11 +18,6 @@
             <h2><xsl:value-of select="nombre"/></h2>
             <p><xsl:value-of select="descripcion"/></p>
             <p class="precio">Precio: <xsl:value-of select="precio"/> <xsl:value-of select="precio/@moneda"/></p>
-            <div class="menu">
-              <a href="index.html">Inicio</a>
-              <a href="datos.html">Formulario</a>
-              <a href="personal.html">Mis datos</a>
-            </div>
           </div>
         </xsl:for-each>
       </body>
