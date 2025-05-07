@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #e8f0fe; /* Color de fondo claro que combina con el menú */
+}
+.menu {
+    position: fixed;
+    top: 10px; /* Margin superior para separar el menú del borde */
+    left: 0;
+    width: calc(100% - 20px); /* Ajusta el ancho dejando espacio en los bordes */
+    margin: 0 10px; /* Espaciado lateral */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribuye elementos a los extremos */
+    background: #2575fc;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 1000;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    margin: 0 10px; /* Espaciado entre los botones */
+    padding: 8px 15px;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.menu a:hover {
+    background-color: white;
+    color: #2575fc;
+}
+.menu .welcome-text {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 20px; /* Espaciado del texto con los botones */
+}
+main {
+        margin-top: 80px; /* Espacio suficiente para compensar la altura del menú */
+        display: flex;
+        align-items: center; /* Centrado vertical */
+        justify-content: center; /* Centrado horizontal */
+        min-height: calc(100vh - 80px);        text-align: center;
+    }
+
+h1 {
+    font-size: 2.5rem;
+    color: #2575fc;
+}
+p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+.fcontainer {
+    background-color: white;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    padding: 20px 30px;
+    width: 300px; /* Ancho fijo */
+    text-align: center;
+}
+.fcontainer h1 {
+    color: #007bff; /* Color azul para el título */
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+label, p {
+    font-size: 14px;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

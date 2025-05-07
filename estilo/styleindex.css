@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #e8f0fe; /* Color de fondo claro que combina con el menú */
+}
+.menu {
+    position: fixed;
+    top: 10px; /* Margin superior para separar el menú del borde */
+    left: 0;
+    width: calc(100% - 20px); /* Ajusta el ancho dejando espacio en los bordes */
+    margin: 0 10px; /* Espaciado lateral */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribuye elementos a los extremos */
+    background: #2575fc;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 1000;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    margin: 0 10px; /* Espaciado entre los botones */
+    padding: 8px 15px;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.menu a:hover {
+    background-color: white;
+    color: #2575fc;
+}
+.menu .welcome-text {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 20px; /* Espaciado del texto con los botones */
+}
+main {
+    margin-top: 80px; /* Espacio suficiente para compensar la altura del menú y su margen superior */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px); /* Ajusta la altura para centrar el contenido */
+    text-align: center;
+}
+h1 {
+    font-size: 2.5rem;
+    color: #2575fc;
+}
+p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
